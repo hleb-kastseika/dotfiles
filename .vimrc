@@ -52,7 +52,6 @@ set title
 set scrolloff=5
 
 set laststatus=2
-set statusline=%f:%c:%l\ (%p%%)\ %y%([%R%M]%)\ buf:\ #%n\ [%{&fileencoding}]
 
 set history=1000
 set undolevels=1000
@@ -60,3 +59,19 @@ set undolevels=1000
 set noswapfile
 
 set virtualedit=all
+
+set noshowmode
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/bundle')
+Plug 'itchyny/lightline.vim'
+call plug#end()
+
+let g:lightline = {
+      \ 'colorscheme': 'seoul256',
+      \ }
