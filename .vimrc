@@ -69,9 +69,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/bundle')
-Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'          
+Plug 'frazrepo/vim-rainbow'
 call plug#end()
 
 let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ }
+
+let g:rainbow_active = 1
