@@ -4,6 +4,8 @@ ZSH_THEME="robbyrussell"
 
 ENABLE_CORRECTION="true"
 
-plugins=(git)
+ZSH_TMUX_AUTOSTART=true
+
+plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
