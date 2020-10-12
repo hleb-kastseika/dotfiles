@@ -1,4 +1,4 @@
-set number
+set relativenumber number
 
 syntax on
 
