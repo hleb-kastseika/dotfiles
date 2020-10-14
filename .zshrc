@@ -6,6 +6,10 @@ ENABLE_CORRECTION="true"
 
 ZSH_TMUX_AUTOSTART=true
 
-plugins=(git tmux)
+plugins=(
+  git
+  tmux
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
