@@ -1,0 +1,9 @@
+[user]
+	name = Gleb Kosteiko
+	email = gleb.kosteiko@gmail.com
+    username = gleb-kosteiko
+[core]
+    autocrlf = input
+    editor = vim
+[diff]
+	tool = vimdiff
