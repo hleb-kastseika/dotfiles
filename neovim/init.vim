@@ -74,7 +74,7 @@ nnoremap <esc><esc> :noh<return><esc>
 
 inoremap <silent>  <S-Insert>  <C-R>+
 
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin()
 Plug 'itchyny/lightline.vim'          
 Plug 'frazrepo/vim-rainbow'
 call plug#end()
