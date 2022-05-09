@@ -1,5 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
 ZSH_THEME="robbyrussell"
 
 ENABLE_CORRECTION="true"
