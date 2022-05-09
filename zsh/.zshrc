@@ -9,7 +9,10 @@ ZSH_TMUX_AUTOSTART=true
 plugins=(
   git
   tmux
+  fzf
   zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
