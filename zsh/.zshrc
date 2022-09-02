@@ -18,3 +18,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias python=python3
+alias bat=batcat
