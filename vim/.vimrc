@@ -69,6 +69,10 @@ set linebreak
 set backspace=indent,eol,start
 
 nnoremap <esc><esc> :noh<return><esc>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
