@@ -56,8 +56,6 @@ set laststatus=2
 set history=1000
 set undolevels=1000
 
-set noswapfile
-
 set virtualedit=all
 
 set noshowmode
@@ -68,6 +66,7 @@ set linebreak
 
 set backspace=indent,eol,start
 
+inoremap kj <esc>
 nnoremap <esc><esc> :noh<return><esc>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
