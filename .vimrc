@@ -66,7 +66,7 @@ set linebreak
 
 set backspace=indent,eol,start
 
-inoremap kj <esc>
+noremap <c-'> <esc>
 nnoremap <esc><esc> :noh<return><esc>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
@@ -74,18 +74,24 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+      silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/bundle')
 Plug 'itchyny/lightline.vim'          
 Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'kien/ctrlp.vim'
 call plug#end()
 
+
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
-      \ }
+          \ 'colorscheme': 'seoul256',
+          \ }
 
 let g:rainbow_active = 1
