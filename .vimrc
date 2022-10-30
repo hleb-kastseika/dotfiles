@@ -26,12 +26,13 @@ set hidden
 
 set guioptions-=T
 
+set autoindent
+set smartindent
+set smarttab
 set expandtab
 set shiftwidth=4
-set softtabstop=5
+set softtabstop=4
 set tabstop=4
-
-set nowrap
 
 set wildmenu
 
@@ -60,18 +61,43 @@ set virtualedit=all
 
 set noshowmode
 
-set wrap
+set nowrap
 
 set linebreak
 
 set backspace=indent,eol,start
 
-noremap <c-'> <esc>
-nnoremap <esc><esc> :noh<return><esc>
+noremap <Space> <Nop>
+map <Space> <Leader>
+
+inoremap kj <esc>
+inoremap jk <esc>
+vnoremap kj <esc>
+vnoremap jk <esc>
+
+nnoremap ; :
+
+nnoremap H ^
+nnoremap L $
+
+map <leader>f :noh<CR>
+
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+map <C-n> :bnext<CR>
+map <C-m> :bprev<CR>
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+map <leader>t :NERDTreeToggle<CR>
+
+noremap <leader>/ :Commentary<cr>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
       silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -86,12 +112,27 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
-Plug 'kien/ctrlp.vim'
 call plug#end()
 
-
 let g:lightline = {
-          \ 'colorscheme': 'seoul256',
-          \ }
+            \ 'colorscheme': 'seoul256',
+            \}
 
 let g:rainbow_active = 1
+
+let NERDTreeShowHidden=1
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeQuitOnOpen=1
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+
+" Fix issue in NERDTree & Lightline compatibility
+autocmd VimEnter * call lightline#update()
+
