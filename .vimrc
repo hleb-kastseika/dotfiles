@@ -67,13 +67,16 @@ set linebreak
 
 set backspace=indent,eol,start
 
+set timeoutlen=300
+set ttimeoutlen=0
+
 noremap <Space> <Nop>
 map <Space> <Leader>
 
 inoremap kj <esc>
 inoremap jk <esc>
-vnoremap kj <esc>
-vnoremap jk <esc>
+xnoremap kj <esc>
+xnoremap jk <esc>
 
 nnoremap ; :
 
@@ -95,7 +98,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-map <leader>t :NERDTreeToggle<CR>
+map <leader>f :NERDTreeToggle<CR>
 
 noremap <leader>/ :Commentary<cr>
 
@@ -133,6 +136,5 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
 
-" Fix issue in NERDTree & Lightline compatibility
-autocmd VimEnter * call lightline#update()
-
+" Fix issue with NERDTree & Lightline compatibility
+autocmd VimEnter,BufWinEnter * call lightline#update()
