@@ -78,6 +78,11 @@ inoremap jk <esc>
 xnoremap kj <esc>
 xnoremap jk <esc>
 
+nmap j gj
+nmap k gk
+xmap j gj
+xmap k gk
+
 nnoremap ; :
 
 nnoremap H ^
