@@ -88,7 +88,7 @@ nnoremap ; :
 nnoremap H ^
 nnoremap L $
 
-map <leader>f :noh<CR>
+map <leader>h :noh<CR>
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
