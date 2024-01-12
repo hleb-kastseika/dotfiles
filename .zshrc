@@ -22,6 +22,3 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/home/hleb/bin:$PATH
 
 [[ -e "/home/hleb/lib/oracle-cli/lib/python3.9/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/hleb/lib/oracle-cli/lib/python3.9/site-packages/oci_cli/bin/oci_autocomplete.sh"
-
-alias python=python3
-alias bat=batcat
