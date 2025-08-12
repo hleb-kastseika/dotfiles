@@ -3,13 +3,14 @@ brew "bat"
 brew "fzf"
 brew "git"
 brew "hugo"
+brew "mas"
 brew "neovim"
 brew "ruff"
 brew "tig"
 brew "tmux"
 brew "uv"
-brew "wireguard-tools"
 cask "bitwarden"
+cask "ccleaner"
 cask "claude-code"
 cask "cursor"
 cask "docker-desktop"
@@ -17,6 +18,12 @@ cask "font-fira-code"
 cask "pycharm-ce"
 cask "simplenote"
 cask "visual-studio-code"
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Telegram", id: 747648890
+mas "WireGuard", id: 1451685025
 vscode "ms-python.debugpy"
 vscode "ms-python.pylint"
 vscode "ms-python.python"
