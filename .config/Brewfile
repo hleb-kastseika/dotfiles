@@ -25,6 +25,7 @@ cask "docker-desktop"
 cask "font-fira-code"
 cask "gimp"
 cask "pycharm-ce"
+cask "raycast"
 cask "simplenote"
 cask "visual-studio-code"
 mas "iMovie", id: 408981434
