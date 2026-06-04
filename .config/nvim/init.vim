@@ -68,7 +68,7 @@ set linebreak
 set backspace=indent,eol,start
 
 call plug#begin('~/.vim/bundle')
-Plug 'itchyny/lightline.vim'          
+Plug 'itchyny/lightline.vim'
 Plug 'frazrepo/vim-rainbow'
 call plug#end()
 
