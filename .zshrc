@@ -22,6 +22,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
 
-alias bat=batcat
+alias cat=batcat
+alias vim=nvim
+alias vi=nvim
 
 export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
