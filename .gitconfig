@@ -27,7 +27,7 @@
 [branch]
     sort = -committerdate
 [column]
-	ui = auto
+    ui = auto
 [tag]
     sort = version:refname
 [init]
