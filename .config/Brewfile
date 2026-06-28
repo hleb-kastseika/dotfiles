@@ -1,36 +1,74 @@
+# AWS Cloud Development Kit - framework for defining AWS infra as code
 brew "aws-cdk"
+# CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# Distributed revision control system
 brew "git"
+# Configurable static site generator
 brew "hugo"
+# Neural Network Go engine with no human-provided knowledge
 brew "katago"
+# Mac App Store command-line interface
 brew "mas"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# It's not just a linter that annoys you!
 brew "pylint"
+# Extremely fast Python linter, written in Rust
 brew "ruff"
+# Text interface for Git repositories
 brew "tig"
+# Terminal multiplexer
 brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Internet file retriever
 brew "wget"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Desktop password and login vault
+cask "bitwarden"
+# Remove junk and unused files
 cask "ccleaner"
+# OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
 cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Write, edit, and chat about your code with AI
 cask "cursor"
+# App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Launcher for *Epic Games* games
 cask "epic-games"
 cask "font-fira-code"
+# Free and open-source image editor
 cask "gimp"
+# Game client
 cask "gog-galaxy"
+# Open-source software for live streaming and screen recording
 cask "obs"
+# IDE for Python programming - Community Edition
 cask "pycharm-ce"
+# Peer to peer Bitorrent client
 cask "qbittorrent"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Open-source code editor
 cask "visual-studio-code"
+# Wine wrapper built with SwiftUI
+cask "whisky"
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
