@@ -57,6 +57,8 @@ cask "font-fira-code"
 cask "gimp"
 # Game client
 cask "gog-galaxy"
+# Tool for analyzing games and playing go with AI feedback from KataGo
+cask "katrain"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # IDE for Python programming - Community Edition
@@ -69,6 +71,7 @@ cask "raycast"
 cask "visual-studio-code"
 # Wine wrapper built with SwiftUI
 cask "whisky"
+mas "Amphetamine", id: 937984704
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
