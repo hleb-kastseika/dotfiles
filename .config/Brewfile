@@ -20,6 +20,8 @@ brew "katago"
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# AI coding agent, built for the terminal
+brew "opencode"
 # It's not just a linter that annoys you!
 brew "pylint"
 # Extremely fast Python linter, written in Rust
