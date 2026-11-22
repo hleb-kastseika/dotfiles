@@ -34,7 +34,7 @@ brew "uv"
 brew "wget"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
-# Desktop password and login vault
+# Open source desktop password manager with encrypted vault and autofilling
 cask "bitwarden"
 # Remove junk and unused files
 cask "ccleaner"
@@ -57,6 +57,8 @@ cask "font-fira-code"
 cask "gimp"
 # Game client
 cask "gog-galaxy"
+# Desktop app for terminals and coding agents
+cask "herdr-app"
 # Tool for analyzing games and playing go with AI feedback from KataGo
 cask "katrain"
 # Open-source software for live streaming and screen recording
